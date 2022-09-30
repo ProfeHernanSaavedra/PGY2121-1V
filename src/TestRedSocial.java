@@ -19,7 +19,13 @@ public class TestRedSocial {
         insta.datos();
         System.out.println("");
         
-                
+        System.out.println("***POLIMORFISMO****");
+        RedSocial rs = new Instagram(3, "sadad", true,"asd","adsd");
+        
+        
+        rs.datos();
+        System.out.println("*************");
+        
         Date fecha = new Date();
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
         
