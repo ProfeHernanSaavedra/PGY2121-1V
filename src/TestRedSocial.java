@@ -1,4 +1,5 @@
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
@@ -17,7 +18,14 @@ public class TestRedSocial {
         System.out.println("");
         insta.datos();
         System.out.println("");
+        
+                
         Date fecha = new Date();
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+        
+        String fechaN = formato.format(fecha);
+        System.out.println("fecha Nueva:  " + fechaN);
+        
         Twitter tw = new Twitter(2, "esta helado", fecha, "user","pass");
         System.out.println(tw.toString());
         System.out.println("");
